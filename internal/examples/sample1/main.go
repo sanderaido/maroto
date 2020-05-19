@@ -3,10 +3,10 @@ package main
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/johnfercher/maroto/pkg/color"
-	"github.com/johnfercher/maroto/pkg/consts"
-	"github.com/johnfercher/maroto/pkg/pdf"
-	"github.com/johnfercher/maroto/pkg/props"
+	"github.com/sanderaido/maroto/pkg/color"
+	"github.com/sanderaido/maroto/pkg/consts"
+	"github.com/sanderaido/maroto/pkg/pdf"
+	"github.com/sanderaido/maroto/pkg/props"
 	"io/ioutil"
 	"os"
 	"time"
@@ -41,14 +41,14 @@ func main() {
 			m.ColSpace(3)
 
 			m.Col(3, func() {
-				m.QrCode("https://github.com/johnfercher/maroto", props.Rect{
+				m.QrCode("https://github.com/sanderaido/maroto", props.Rect{
 					Center:  true,
 					Percent: 75,
 				})
 			})
 
 			m.Col(3, func() {
-				id := "https://github.com/johnfercher/maroto"
+				id := "https://github.com/sanderaido/maroto"
 				_ = m.Barcode(id, props.Barcode{
 					Center:     true,
 					Proportion: props.Proportion{Width: 50, Height: 10},
