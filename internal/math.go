@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/johnfercher/maroto/pkg/props"
 	"github.com/jung-kurt/gofpdf"
+	"github.com/sanderaido/maroto/pkg/props"
 )
 
 // Math is the abstraction which deals with useful calc

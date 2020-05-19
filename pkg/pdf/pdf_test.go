@@ -3,17 +3,16 @@ package pdf_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/johnfercher/maroto/internal"
-	"github.com/johnfercher/maroto/pkg/color"
-	"testing"
-
-	"github.com/johnfercher/maroto/internal/mocks"
-	"github.com/johnfercher/maroto/pkg/consts"
-	"github.com/johnfercher/maroto/pkg/pdf"
-	"github.com/johnfercher/maroto/pkg/props"
 	"github.com/pkg/errors"
+	"github.com/sanderaido/maroto/internal"
+	"github.com/sanderaido/maroto/internal/mocks"
+	"github.com/sanderaido/maroto/pkg/color"
+	"github.com/sanderaido/maroto/pkg/consts"
+	"github.com/sanderaido/maroto/pkg/pdf"
+	"github.com/sanderaido/maroto/pkg/props"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
+	"testing"
 )
 
 func TestNewPdf(t *testing.T) {
